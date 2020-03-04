@@ -1,0 +1,10 @@
+C:\Users\noddy\source\repos\clickclick\clickclick\bin\Debug\clickclick.exe.config
+C:\Users\noddy\source\repos\clickclick\clickclick\bin\Debug\clickclick.exe
+C:\Users\noddy\source\repos\clickclick\clickclick\bin\Debug\clickclick.pdb
+C:\Users\noddy\source\repos\clickclick\clickclick\obj\Debug\clickclick.csprojAssemblyReference.cache
+C:\Users\noddy\source\repos\clickclick\clickclick\obj\Debug\clickclick.Form1.resources
+C:\Users\noddy\source\repos\clickclick\clickclick\obj\Debug\clickclick.Properties.Resources.resources
+C:\Users\noddy\source\repos\clickclick\clickclick\obj\Debug\clickclick.csproj.GenerateResource.cache
+C:\Users\noddy\source\repos\clickclick\clickclick\obj\Debug\clickclick.csproj.CoreCompileInputs.cache
+C:\Users\noddy\source\repos\clickclick\clickclick\obj\Debug\clickclick.exe
+C:\Users\noddy\source\repos\clickclick\clickclick\obj\Debug\clickclick.pdb
