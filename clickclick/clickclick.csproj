@@ -84,5 +84,16 @@
   <ItemGroup>
     <None Include="Resources\E1Wb5mf.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\170-1701301_png-free-stock-punho-cerrado-png-pesquisa-google.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\nyjmytmkt7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Recorde.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

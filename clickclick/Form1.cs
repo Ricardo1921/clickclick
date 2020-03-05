@@ -15,58 +15,64 @@ namespace clickclick
         public Form1()
         {
             InitializeComponent();
+            mao.Visible = false;
+            timer1.Interval = 1000;
         }
 
         clicar n = new clicar();
 
         private void Form1_Load(object sender, EventArgs e)
         {
-            button3.Visible = false;
+            mao.Visible = false;
         }
 
         private void Timer1_Tick(object sender, EventArgs e)
         {
-            label4.Text = n.timeS();
+            int _tempo = Convert.ToInt32(timer.Text);
+            if (_tempo < 1) Stop();
+            else
+            {
+                _tempo--;
+            }
+            timer.Text = _tempo.ToString();
+        }
+
+        private void Stop()
+        {
+            button2.Text = "GO!";
+            mao.Visible = false;
+            timer1.Stop();
+            n.Record(pontos, record);
+        }
+
+        private void Start()
+        {
+            button2.Text = "STOP";
+            timer.Text = "10";
+            mao.Visible = true;
+            timer1.Start();
+            pontos.Text = "0";
         }
 
         private void Button1_Click(object sender, EventArgs e)
         {
             timer1.Start();
-            button3.Visible = true;
-        }
-
-        private void Label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Label5_Click(object sender, EventArgs e)
-        {
-
+            mao.Visible = true;
         }
 
         private void Button2_Click(object sender, EventArgs e)
         {
             timer1.Stop();
-            label4.Text = n.treset();
-            label5.Text = n.treset();
-            button3.Visible = false;
+            timer.Text = n.treset();
+            pontos.Text = n.treset();
+            mao.Visible = false;
         }
 
         private void Button3_Click(object sender, EventArgs e)
         {
             n.move(sender);
-            label5.Text = n.points();
+            pontos.Text = n.points();
         }
+
     }
 }

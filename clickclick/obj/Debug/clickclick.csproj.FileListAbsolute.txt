@@ -8,3 +8,4 @@ C:\Users\noddy\source\repos\clickclick\clickclick\obj\Debug\clickclick.csproj.Ge
 C:\Users\noddy\source\repos\clickclick\clickclick\obj\Debug\clickclick.csproj.CoreCompileInputs.cache
 C:\Users\noddy\source\repos\clickclick\clickclick\obj\Debug\clickclick.exe
 C:\Users\noddy\source\repos\clickclick\clickclick\obj\Debug\clickclick.pdb
+C:\Users\noddy\source\repos\clickclick\clickclick\bin\Debug\Resources\Recorde.txt

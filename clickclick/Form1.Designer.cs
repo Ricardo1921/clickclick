@@ -31,19 +31,19 @@
             this.components = new System.ComponentModel.Container();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.mao = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
+            this.timer = new System.Windows.Forms.Label();
+            this.pontos = new System.Windows.Forms.Label();
+            this.record = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(1, 406);
+            this.button1.Location = new System.Drawing.Point(1, 674);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(139, 42);
             this.button1.TabIndex = 0;
@@ -53,7 +53,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(658, 406);
+            this.button2.Location = new System.Drawing.Point(620, 674);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(139, 42);
             this.button2.TabIndex = 1;
@@ -61,15 +61,22 @@
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.Button2_Click);
             // 
-            // button3
+            // mao
             // 
-            this.button3.Location = new System.Drawing.Point(320, 181);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(85, 90);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.Button3_Click);
+            this.mao.BackColor = System.Drawing.Color.Transparent;
+            this.mao.BackgroundImage = global::clickclick.Properties.Resources.nyjmytmkt7;
+            this.mao.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.mao.FlatAppearance.BorderSize = 0;
+            this.mao.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Transparent;
+            this.mao.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Transparent;
+            this.mao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.mao.ForeColor = System.Drawing.Color.Transparent;
+            this.mao.Location = new System.Drawing.Point(620, 335);
+            this.mao.Name = "mao";
+            this.mao.Size = new System.Drawing.Size(67, 135);
+            this.mao.TabIndex = 2;
+            this.mao.UseVisualStyleBackColor = false;
+            this.mao.Click += new System.EventHandler(this.Button3_Click);
             // 
             // label1
             // 
@@ -79,55 +86,52 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "Tempo";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label1.Click += new System.EventHandler(this.Label1_Click);
             // 
             // label2
             // 
-            this.label2.Location = new System.Drawing.Point(578, 35);
+            this.label2.Location = new System.Drawing.Point(568, 9);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(88, 22);
             this.label2.TabIndex = 4;
             this.label2.Text = "Pontuação";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label2.Click += new System.EventHandler(this.Label2_Click);
             // 
             // label3
             // 
-            this.label3.Location = new System.Drawing.Point(568, 98);
+            this.label3.Location = new System.Drawing.Point(568, 49);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(98, 31);
             this.label3.TabIndex = 5;
             this.label3.Text = "Record";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label3.Click += new System.EventHandler(this.Label3_Click);
             // 
-            // label4
+            // timer
             // 
-            this.label4.Location = new System.Drawing.Point(42, 57);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(89, 21);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "20";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.timer.Location = new System.Drawing.Point(38, 87);
+            this.timer.Name = "timer";
+            this.timer.Size = new System.Drawing.Size(89, 21);
+            this.timer.TabIndex = 6;
+            this.timer.Text = "10";
+            this.timer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.timer.Click += new System.EventHandler(this.Timer_Click);
             // 
-            // label5
+            // pontos
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(681, 37);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(13, 13);
-            this.label5.TabIndex = 7;
-            this.label5.Text = "0";
-            this.label5.Click += new System.EventHandler(this.Label5_Click);
+            this.pontos.AutoSize = true;
+            this.pontos.Location = new System.Drawing.Point(690, 9);
+            this.pontos.Name = "pontos";
+            this.pontos.Size = new System.Drawing.Size(13, 13);
+            this.pontos.TabIndex = 7;
+            this.pontos.Text = "0";
             // 
-            // label6
+            // record
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(681, 116);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(13, 13);
-            this.label6.TabIndex = 8;
-            this.label6.Text = "0";
+            this.record.AutoSize = true;
+            this.record.Location = new System.Drawing.Point(690, 49);
+            this.record.Name = "record";
+            this.record.Size = new System.Drawing.Size(13, 13);
+            this.record.TabIndex = 8;
+            this.record.Text = "0";
             // 
             // timer1
             // 
@@ -140,14 +144,14 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::clickclick.Properties.Resources.E1Wb5mf;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(761, 561);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
+            this.ClientSize = new System.Drawing.Size(761, 715);
+            this.Controls.Add(this.record);
+            this.Controls.Add(this.pontos);
+            this.Controls.Add(this.timer);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button3);
+            this.Controls.Add(this.mao);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
@@ -162,13 +166,13 @@
 
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button mao;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label timer;
+        private System.Windows.Forms.Label pontos;
+        private System.Windows.Forms.Label record;
         private System.Windows.Forms.Timer timer1;
     }
 }

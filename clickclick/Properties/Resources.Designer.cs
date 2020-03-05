@@ -63,10 +63,39 @@ namespace clickclick.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _170_1701301_png_free_stock_punho_cerrado_png_pesquisa_google {
+            get {
+                object obj = ResourceManager.GetObject("170-1701301_png-free-stock-punho-cerrado-png-pesquisa-google", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap E1Wb5mf {
             get {
                 object obj = ResourceManager.GetObject("E1Wb5mf", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap nyjmytmkt7 {
+            get {
+                object obj = ResourceManager.GetObject("nyjmytmkt7", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta uma cadeia de caracteres localizada semelhante a 0.
+        /// </summary>
+        internal static string Recorde {
+            get {
+                return ResourceManager.GetString("Recorde", resourceCulture);
             }
         }
     }
