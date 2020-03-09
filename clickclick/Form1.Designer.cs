@@ -30,12 +30,11 @@
         {
             this.components = new System.ComponentModel.Container();
             this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
             this.mao = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.timer = new System.Windows.Forms.Label();
+            this.tempo = new System.Windows.Forms.Label();
             this.pontos = new System.Windows.Forms.Label();
             this.record = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
@@ -50,16 +49,6 @@
             this.button1.Text = "Start";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.Button1_Click);
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(620, 674);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(139, 42);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Restart";
-            this.button2.UseVisualStyleBackColor = true;
-            this.button2.Click += new System.EventHandler(this.Button2_Click);
             // 
             // mao
             // 
@@ -105,15 +94,14 @@
             this.label3.Text = "Record";
             this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // timer
+            // tempo
             // 
-            this.timer.Location = new System.Drawing.Point(38, 87);
-            this.timer.Name = "timer";
-            this.timer.Size = new System.Drawing.Size(89, 21);
-            this.timer.TabIndex = 6;
-            this.timer.Text = "10";
-            this.timer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.timer.Click += new System.EventHandler(this.Timer_Click);
+            this.tempo.Location = new System.Drawing.Point(38, 87);
+            this.tempo.Name = "tempo";
+            this.tempo.Size = new System.Drawing.Size(89, 21);
+            this.tempo.TabIndex = 6;
+            this.tempo.Text = "10";
+            this.tempo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pontos
             // 
@@ -147,12 +135,11 @@
             this.ClientSize = new System.Drawing.Size(761, 715);
             this.Controls.Add(this.record);
             this.Controls.Add(this.pontos);
-            this.Controls.Add(this.timer);
+            this.Controls.Add(this.tempo);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.mao);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
             this.Text = "Form1";
@@ -165,12 +152,11 @@
         #endregion
 
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button mao;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label timer;
+        private System.Windows.Forms.Label tempo;
         private System.Windows.Forms.Label pontos;
         private System.Windows.Forms.Label record;
         private System.Windows.Forms.Timer timer1;

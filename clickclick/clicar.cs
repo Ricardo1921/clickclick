@@ -11,34 +11,57 @@ namespace clickclick
 {
     class clicar
     {
-        private bool _start = true;
-        private bool Start => _start;
-
         public string _path = Application.StartupPath + "\\Resources\\Recorde.txt";
 
         public string Abrir => File.ReadAllText(_path);
 
         public void Gravar(string valor) => File.WriteAllText(_path, valor);
-        private int pontos;
-        private string _texto;
-
-        public void Salvar(string valor)
+        
+        public void Move(object sender)
         {
-            File.WriteAllText(_path,valor);
+            Random _r = new Random();
+            int _x = int.Parse(_r.Next(500).ToString());
+            int _y = int.Parse(_r.Next(250).ToString()) + 100;
+            Point _pt = new Point(_x, _y);
+            Button _b = (Button)sender;
+            _b.Location = _pt;
+        }
+
+        public bool Tempo(object sender)
+        {
+            Label _t = (Label)sender;
+            int _tempo = Convert.ToInt32(_t.Text);
+            if (_tempo > 0)
+            {
+                _tempo--;
+                _t.Text = _tempo.ToString();
+                return false;
+            }
+            else return true;
         }
 
         public void Pontos(object sender)
         {
-            TextBox _t = (TextBox)sender;
+            Label _t = (Label)sender;
             int _pts = Convert.ToInt32(_t.Text) + 1;
             _t.Text = _pts.ToString();
         }
 
-        public string Tempo(string tempo)
+        public void Record(object pontos, object record)
         {
-            int _tempo = Convert.ToInt32(tempo);
-            if (_tempo > 0) _tempo--; else _start = false;
-            return _tempo.ToString();
+            Label _pontos = (Label)pontos;
+            Label _record = (Label)record;
+            int _max = Convert.ToInt32(_record.Text);
+            int _pts = Convert.ToInt32(_pontos.Text);
+            if (_max < _pts)
+            {
+                _record.Text = _pontos.Text;
+                this.Gravar(_record.Text);
+            }
+        }
+
+        public void Salvar(string valor)
+        {
         }
 
         /*public string points()
@@ -62,26 +85,5 @@ namespace clickclick
             pontos = 0;
             return pontos.ToString();
         }*/
-
-        public void move(object sender)
-        {
-            Random r = new Random();
-            int _x = int.Parse(r.Next(500).ToString());
-            int _y = int.Parse(r.Next(250).ToString()) + 100;
-            Point pt = new Point(_x, _y);
-
-            Button btn = (Button)sender;
-            btn.Location = pt;
-        }
-
-        public void Record(Object pontos, object record)
-        {
-            TextBox _pontos = (TextBox)pontos;
-            TextBox _record = (TextBox)record;
-            int _max = Convert.ToInt32(_record.Text);
-            int _pts = Convert.ToInt32(_pontos.Text);
-            if (_max < _pts) _record.Text = _pontos.Text;
-
-        }
     }
 }
